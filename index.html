@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Interactive Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-step1">
+
+    <div class="card">
+        <!-- Step 1 -->
+        <div id="step1">
+            <div class="title">I Love You 💘</div>
+            <div class="btn-container">
+                <button class="btn-green" onclick="goToStep2()">ကြည့်မည်</button>
+                <button id="noLookBtn" class="btn-red" onclick="clickNoLook()">မကြည့်ဘူး</button>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="step2" class="hidden">
+            <div class="title purple-bg">ကိုယ်မင်းကိုအရမ်းချစ်တယ်💘 ပြန်မေးစရာရှိတယ်</div>
+            <div class="btn-container">
+                <button class="btn-green" onclick="goToStep3()">ပြန်မေး</button>
+                <button class="btn-red" onclick="clickNoAsk()">မမေးနဲ့</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step3" class="hidden">
+            <div class="title">ကိုယ့်ထက်ပိုချစ်တယ်</div>
+            <div class="btn-container">
+                <button class="btn-green" onclick="clickMoreLove()">ပိုချစ်တယ်</button>
+                <button class="btn-red" onclick="clickNotLove()">မချစ်ဘူး</button>
+            </div>
+        </div>
+
+        <!-- Final Message Result -->
+        <div id="finalResult" class="hidden">
+            <div id="finalText" class="title"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
